@@ -285,6 +285,12 @@
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="0" name="Play" sid="894808547089899" type="Audio">
+                            <param id="0" name="Audio file">tiro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -335,6 +341,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="282142573796847" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="405967599872212" type="inimigo1" />
                         <action id="-10" name="Add to" sid="693618455131077" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -352,6 +364,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="879613765762995" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="770577098346609" type="inimigo2" />
                         <action id="-10" name="Add to" sid="217575695065436" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -369,6 +387,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="149055328055219" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="447451065947876" type="inimigo3" />
                         <action id="-10" name="Add to" sid="594785438659036" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -386,6 +410,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="584415914704225" type="Audio">
+                            <param id="0" name="Audio file">destruction boss</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="569880891755252" type="inimigo4" />
                         <action id="-10" name="Add to" sid="657017559563235" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -393,6 +423,9 @@
                         </action>
                         <action id="0" name="Set text" sid="750384697499658" type="SCORE">
                             <param id="0" name="Text">SCORE</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="583820682829519" type="System">
+                            <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="832354576049289" type="System">
                             <param id="0" name="Layer">&quot;Win&quot;</param>
@@ -416,6 +449,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="403325311046534" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="491912112106150" type="inimigo1" />
                         <action id="-9" name="Destroy" sid="137430169661472" type="tiro" />
                         <action id="-10" name="Add to" sid="933820912143802" type="System">
@@ -434,6 +473,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="675076821996019" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="648263525270983" type="inimigo2" />
                         <action id="-9" name="Destroy" sid="551681394046349" type="tiro" />
                         <action id="-10" name="Add to" sid="652259091054560" type="System">
@@ -452,6 +497,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="772440079012477" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="594283465769708" type="inimigo1" />
                         <action id="-10" name="Add to" sid="923825227883313" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -469,6 +520,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="472747306738047" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="967740264508266" type="inimigo2" />
                         <action id="-10" name="Add to" sid="223112794482875" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -486,6 +543,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="816517552047225" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="216062164126169" type="inimigo3" />
                         <action id="-9" name="Destroy" sid="117818362467646" type="missile" />
                         <action id="-10" name="Add to" sid="332391516402514" type="System">
@@ -581,12 +644,29 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="132328788870413" type="Audio">
+                            <param id="0" name="Audio file">navepatrulha</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="978641154034214" type="sensor">
                             <param id="0" name="Object">navepatrulha</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="492128473980668" type="sensor">
+                    </actions>
+                </event-block>
+                <event-block sid="495139890092135">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="746344044851704" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="377519402766934" type="sensor">
                             <param id="0" name="Object">tiropatrulha</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
@@ -621,6 +701,10 @@
                     <actions>
                         <action id="-4" name="Set layer visible" sid="878173803705685" type="System">
                             <param id="0" name="Layer">&quot;Tela Inicio&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="678103939671993" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="177650025893006" type="System">
@@ -658,7 +742,7 @@
                 <action id="0" name="Play" sid="288992832520005" type="Audio">
                     <param id="0" name="Audio file">children-of-the-grave-8-bit</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>

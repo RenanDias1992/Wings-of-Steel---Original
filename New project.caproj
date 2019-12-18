@@ -198,22 +198,19 @@
                     <behavior-type name="Bullet" sid="932893417343775">
                         <behavior id="Bullet" />
                     </behavior-type>
-                    <behavior-type name="DestroyOutsideLayout" sid="894000945776948">
-                        <behavior id="destroy" />
-                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407728340105224" speed="5">
-                        <frame duration="1" hotspotX="0.494845" hotspotY="0.361702" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
+                        <frame duration="1" hotspotX="0.505155" hotspotY="0.0638298" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
                             <collision-poly>
-                                <point x="0.134021" y="0" />
-                                <point x="1" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.463918" y="0.170213" />
+                                <point x="0.54897" y="0.164894" />
+                                <point x="0.708763" y="0.441489" />
                                 <point x="1" y="1" />
                                 <point x="1" y="1" />
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
-                                <point x="0.876289" y="1" />
+                                <point x="0.224227" y="0.526596" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -368,14 +365,15 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280865800633843" speed="5">
                         <frame duration="1" hotspotX="0.489796" hotspotY="0.562874" original-source="C:\Users\RENAN\Desktop\Sprites\Inimigos\bombneutron.png">
                             <collision-poly>
-                                <point x="0.561224" y="0.389222" />
-                                <point x="0.520408" y="0.449102" />
-                                <point x="0.816326" y="0.0179641" />
+                                <point x="0.418367" y="0.526946" />
+                                <point x="0.454081" y="0.495509" />
+                                <point x="0.469388" y="0.5" />
+                                <point x="0.510204" y="0.511976" />
                                 <point x="0.520408" y="0.562874" />
-                                <point x="0.397959" y="0.718563" />
-                                <point x="0.306123" y="0.850299" />
-                                <point x="0.183673" y="0.994012" />
-                                <point x="0.408163" y="0.562874" />
+                                <point x="0.530612" y="0.592815" />
+                                <point x="0.494898" y="0.622754" />
+                                <point x="0.408163" y="0.625749" />
+                                <point x="0.397959" y="0.562874" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -410,13 +408,10 @@
                     <behavior-type name="Bullet" sid="108008651703294">
                         <behavior id="Bullet" />
                     </behavior-type>
-                    <behavior-type name="DestroyOutsideLayout" sid="732571661715992">
-                        <behavior id="destroy" />
-                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849054409666958" speed="5">
-                        <frame duration="1" hotspotX="0.514706" hotspotY="0.265625" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
+                        <frame duration="1" hotspotX="0.507353" hotspotY="0.0625" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
                             <collision-poly>
                                 <point x="0" y="0.484375" />
                                 <point x="0.529412" y="0.03125" />
@@ -520,7 +515,16 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="tiro.m4a" />
+        <file name="tiro.ogg" />
+        <file name="explosion.m4a" />
+        <file name="explosion.ogg" />
+        <file name="destruction boss.m4a" />
+        <file name="destruction boss.ogg" />
+        <file name="navepatrulha.m4a" />
+        <file name="navepatrulha.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="children-of-the-grave-8-bit.m4a" />
         <file name="children-of-the-grave-8-bit.ogg" />

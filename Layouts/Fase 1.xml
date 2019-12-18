@@ -407,10 +407,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>233</x>
-                        <y>894</y>
+                        <y>888</y>
                         <z>0</z>
                         <width>492</width>
-                        <height>88</height>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -495,11 +495,10 @@
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
+                                <set-angle>No</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -510,8 +509,8 @@
                         <width>286</width>
                         <height>151</height>
                         <depth>0</depth>
-                        <hotspotX>0.494845361</hotspotX>
-                        <hotspotY>0.361702114</hotspotY>
+                        <hotspotX>0.50515461</hotspotX>
+                        <hotspotY>0.063829787</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -530,23 +529,22 @@
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
+                                <set-angle>No</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>748</x>
-                        <y>175</y>
+                        <x>705</x>
+                        <y>178</y>
                         <z>0</z>
-                        <width>481</width>
+                        <width>425</width>
                         <height>108</height>
                         <depth>0</depth>
-                        <hotspotX>0.514705896</hotspotX>
-                        <hotspotY>0.265625</hotspotY>
+                        <hotspotX>0.507352948</hotspotX>
+                        <hotspotY>0.0625</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
