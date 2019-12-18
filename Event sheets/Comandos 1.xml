@@ -394,9 +394,18 @@
                         <action id="0" name="Set text" sid="750384697499658" type="SCORE">
                             <param id="0" name="Text">SCORE</param>
                         </action>
-                        <action id="-16" name="Wait" sid="887872954486918" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="832354576049289" type="System">
+                            <param id="0" name="Layer">&quot;Win&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
+                        <action id="-16" name="Wait" sid="887872954486918" type="System">
+                            <param id="0" name="Seconds">10</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="433738325592229" type="System">
+                            <param id="0" name="Layer">&quot;Win&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="104565295327568" type="System" />
                         <action id="-26" name="Restart layout" sid="813737493546545" type="System" />
                     </actions>
                 </event-block>
@@ -646,8 +655,8 @@
                 <condition id="-2" name="On start of layout" sid="637643279346972" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="519661926759970" type="Audio">
-                    <param id="0" name="Audio file">children-of-the-grave-8-bit (online-audio-converter.com)</param>
+                <action id="0" name="Play" sid="288992832520005" type="Audio">
+                    <param id="0" name="Audio file">children-of-the-grave-8-bit</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
