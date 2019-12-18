@@ -167,8 +167,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="172301790291555" type="nave" />
-                        <action id="-16" name="Wait" sid="481408506268454" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="670135860121132" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="637631878729849" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="691874056161804" type="System" />
                         <action id="-26" name="Restart layout" sid="339347197593987" type="System" />
@@ -182,8 +186,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="801871130571501" type="nave" />
-                        <action id="-16" name="Wait" sid="845880653218722" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="447453158826691" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="989305283498147" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="957760130410845" type="System" />
                         <action id="-26" name="Restart layout" sid="581149748892489" type="System" />
@@ -197,8 +205,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="616796475599378" type="nave" />
-                        <action id="-16" name="Wait" sid="402201372025417" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="736929954982775" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="845880653218722" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="104054635257850" type="System" />
                         <action id="-26" name="Restart layout" sid="219256443724807" type="System" />
@@ -212,26 +224,8 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="879756332544646" type="nave" />
-                        <action id="-16" name="Wait" sid="882379426399179" type="System">
-                            <param id="0" name="Seconds">5</param>
-                        </action>
                         <action id="-21" name="Reset global variables" sid="454819921408333" type="System" />
                         <action id="-26" name="Restart layout" sid="498709544773907" type="System" />
-                    </actions>
-                </event-block>
-                <event-block sid="274065364394329">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="513514782452131" type="inimigo1">
-                            <param id="0" name="Object">nave</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="386912156050532" type="nave" />
-                        <action id="-16" name="Wait" sid="451372929224337" type="System">
-                            <param id="0" name="Seconds">5</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="935703703103301" type="System" />
-                        <action id="-26" name="Restart layout" sid="922974331057582" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -305,8 +299,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="403480699248789" type="nave" />
-                        <action id="-16" name="Wait" sid="784669587639849" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="826002659249677" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="830294684630295" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="107381451034832" type="System" />
                         <action id="-26" name="Restart layout" sid="780267841443791" type="System" />
@@ -502,8 +500,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="262446344440194" type="nave" />
-                        <action id="-16" name="Wait" sid="372278975724608" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="648894383088529" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="961549898531962" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="106801231156543" type="System" />
                         <action id="-26" name="Restart layout" sid="451652844207912" type="System" />
@@ -517,8 +519,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="419664039331603" type="nave" />
-                        <action id="-16" name="Wait" sid="780349482761502" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="163973155202564" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="664385754877988" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="939829505420973" type="System" />
                         <action id="-26" name="Restart layout" sid="215134257482314" type="System" />
@@ -532,8 +538,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="926928723732664" type="nave" />
-                        <action id="-16" name="Wait" sid="262334605120175" type="System">
-                            <param id="0" name="Seconds">5</param>
+                        <action id="-4" name="Set layer visible" sid="252745781454537" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="521935299176749" type="System">
+                            <param id="0" name="Seconds">10</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="415193850655742" type="System" />
                         <action id="-26" name="Restart layout" sid="107922416828293" type="System" />
@@ -616,5 +626,20 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="587412039405333">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="815726633404893" type="Keyboard">
+                    <param id="0" name="Key">82 (R)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="564231564437147" type="System">
+                    <param id="0" name="Layer">&quot;Game over&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="619717868277618" type="System" />
+                <action id="-26" name="Restart layout" sid="134602968959349" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
