@@ -10,6 +10,7 @@
     <unique-id>7iqmi3yv03ao</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -17,6 +18,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -83,6 +85,9 @@
                     <behavior-type name="Bullet" sid="836869901475953">
                         <behavior id="Bullet" />
                     </behavior-type>
+                    <behavior-type name="Fade" sid="846643508459396">
+                        <behavior id="Fade" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789045005154501" speed="5">
@@ -110,6 +115,9 @@
                     <behavior-type name="Sine" sid="822236042367767">
                         <behavior id="Sin" />
                     </behavior-type>
+                    <behavior-type name="Fade" sid="866664602130071">
+                        <behavior id="Fade" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="793966173969328" speed="5">
@@ -132,6 +140,9 @@
                 <behaviors>
                     <behavior-type name="Bullet" sid="495553228454305">
                         <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="654628305712752">
+                        <behavior id="Fade" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -160,6 +171,9 @@
                     <behavior-type name="Bullet" sid="792707483869437">
                         <behavior id="Bullet" />
                     </behavior-type>
+                    <behavior-type name="Fade" sid="551178826198503">
+                        <behavior id="Fade" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320772694954377" speed="5">
@@ -173,6 +187,33 @@
                                 <point x="0.5" y="0.0434782" />
                                 <point x="0.779762" y="0.0869565" />
                                 <point x="0.751488" y="0.397826" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="navepatrulha" sid="971355230035258">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="932893417343775">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="894000945776948">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407728340105224" speed="5">
+                        <frame duration="1" hotspotX="0.494845" hotspotY="0.361702" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
+                            <collision-poly>
+                                <point x="0.134021" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.876289" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -288,163 +329,138 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="tiro" sid="655164570571461">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="950019770146135">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="930399071755438">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462282547546761" speed="5">
-                    <frame duration="1" hotspotX="1.19444" hotspotY="0.353846" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\sprite_fire.png">
-                        <collision-poly>
-                            <point x="0.590278" y="0.0653846" />
-                            <point x="0.770833" y="0.261538" />
-                            <point x="0.277778" y="0.261538" />
-                            <point x="0.444445" y="0.0692308" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="missile" sid="228010397793252">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="423264927186393">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="979608557302962">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101335905401589" speed="5">
-                    <frame duration="1" hotspotX="0.764706" hotspotY="0.3" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
-                        <collision-poly>
-                            <point x="0.411765" y="0.04" />
-                            <point x="0.617647" y="0.04" />
-                            <point x="0.808823" y="0.3" />
-                            <point x="0.852941" y="0.565" />
-                            <point x="0.852941" y="0.86" />
-                            <point x="0.132353" y="0.855" />
-                            <point x="0.117647" y="0.57" />
-                            <point x="0.205882" y="0.29" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="neutronbomb" sid="880606573138634">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="328230749402587">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280865800633843" speed="5">
-                    <frame duration="1" hotspotX="0.489796" hotspotY="0.562874" original-source="C:\Users\RENAN\Desktop\Sprites\Inimigos\bombneutron.png">
-                        <collision-poly>
-                            <point x="0.561224" y="0.389222" />
-                            <point x="0.520408" y="0.449102" />
-                            <point x="0.816326" y="0.0179641" />
-                            <point x="0.520408" y="0.562874" />
-                            <point x="0.397959" y="0.718563" />
-                            <point x="0.306123" y="0.850299" />
-                            <point x="0.183673" y="0.994012" />
-                            <point x="0.408163" y="0.562874" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="Tiros">
+            <object-type name="missile" sid="228010397793252">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="423264927186393">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="979608557302962">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101335905401589" speed="5">
+                        <frame duration="1" hotspotX="0.764706" hotspotY="0.3" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
+                            <collision-poly>
+                                <point x="0.411765" y="0.04" />
+                                <point x="0.617647" y="0.04" />
+                                <point x="0.808823" y="0.3" />
+                                <point x="0.852941" y="0.565" />
+                                <point x="0.852941" y="0.86" />
+                                <point x="0.132353" y="0.855" />
+                                <point x="0.117647" y="0.57" />
+                                <point x="0.205882" y="0.29" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="neutronbomb" sid="880606573138634">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="328230749402587">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280865800633843" speed="5">
+                        <frame duration="1" hotspotX="0.489796" hotspotY="0.562874" original-source="C:\Users\RENAN\Desktop\Sprites\Inimigos\bombneutron.png">
+                            <collision-poly>
+                                <point x="0.561224" y="0.389222" />
+                                <point x="0.520408" y="0.449102" />
+                                <point x="0.816326" y="0.0179641" />
+                                <point x="0.520408" y="0.562874" />
+                                <point x="0.397959" y="0.718563" />
+                                <point x="0.306123" y="0.850299" />
+                                <point x="0.183673" y="0.994012" />
+                                <point x="0.408163" y="0.562874" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tiro" sid="655164570571461">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="950019770146135">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="930399071755438">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462282547546761" speed="5">
+                        <frame duration="1" hotspotX="1.19444" hotspotY="0.353846" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\sprite_fire.png">
+                            <collision-poly>
+                                <point x="0.590278" y="0.0653846" />
+                                <point x="0.770833" y="0.261538" />
+                                <point x="0.277778" y="0.261538" />
+                                <point x="0.444445" y="0.0692308" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tiropatrulha" sid="661711146631433">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="108008651703294">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="732571661715992">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849054409666958" speed="5">
+                        <frame duration="1" hotspotX="0.514706" hotspotY="0.265625" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
+                            <collision-poly>
+                                <point x="0" y="0.484375" />
+                                <point x="0.529412" y="0.03125" />
+                                <point x="1" y="0.4375" />
+                                <point x="0.904412" y="0.828125" />
+                                <point x="0.757353" y="0.625" />
+                                <point x="0.536765" y="0.5" />
+                                <point x="0.25" y="0.609375" />
+                                <point x="0.0441176" y="0.6875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="tiroboss" sid="260670301319848">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="545920304240559">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="144905603863076">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719204789749766" speed="5">
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.809524" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
+                            <collision-poly>
+                                <point x="0.633333" y="0.845238" />
+                                <point x="0.505555" y="0.916667" />
+                                <point x="0.366667" y="0.869047" />
+                                <point x="0.361111" y="0.630952" />
+                                <point x="0.438889" y="0.52381" />
+                                <point x="0.5" y="0.273809" />
+                                <point x="0.561111" y="0.488095" />
+                                <point x="0.627778" y="0.654762" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Keyboard" sid="955015232745814">
             <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="navepatrulha" sid="971355230035258">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="932893417343775">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="894000945776948">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407728340105224" speed="5">
-                    <frame duration="1" hotspotX="0.494845" hotspotY="0.361702" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
-                        <collision-poly>
-                            <point x="0.134021" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="1" y="1" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.876289" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="tiropatrulha" sid="661711146631433">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="108008651703294">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="732571661715992">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849054409666958" speed="5">
-                    <frame duration="1" hotspotX="0.514706" hotspotY="0.265625" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
-                        <collision-poly>
-                            <point x="0" y="0.484375" />
-                            <point x="0.529412" y="0.03125" />
-                            <point x="1" y="0.4375" />
-                            <point x="0.904412" y="0.828125" />
-                            <point x="0.757353" y="0.625" />
-                            <point x="0.536765" y="0.5" />
-                            <point x="0.25" y="0.609375" />
-                            <point x="0.0441176" y="0.6875" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="tiroboss" sid="260670301319848">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="545920304240559">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="144905603863076">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719204789749766" speed="5">
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.809524" original-source="C:\Users\RENAN\Desktop\Sprites\Projetil\navepatrulha.png">
-                        <collision-poly>
-                            <point x="0.633333" y="0.845238" />
-                            <point x="0.505555" y="0.916667" />
-                            <point x="0.366667" y="0.869047" />
-                            <point x="0.361111" y="0.630952" />
-                            <point x="0.438889" y="0.52381" />
-                            <point x="0.5" y="0.273809" />
-                            <point x="0.561111" y="0.488095" />
-                            <point x="0.627778" y="0.654762" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Fundo" sid="844787744479636">
             <plugin id="Sprite" />
@@ -468,6 +484,9 @@
         <object-type name="Recal" sid="752622901028339">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Audio" sid="304427497183769">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -478,9 +497,25 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="13" />
+        <global-instance type="Audio" uid="26">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="children-of-the-grave-8-bit (online-audio-converter.com).ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

@@ -335,7 +335,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="405967599872212" type="inimigo1" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="405967599872212" type="inimigo1" />
                         <action id="-10" name="Add to" sid="693618455131077" type="System">
                             <param id="0" name="Variable">SCORE</param>
                             <param id="1" name="Value">100</param>
@@ -352,7 +352,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="770577098346609" type="inimigo2" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="770577098346609" type="inimigo2" />
                         <action id="-10" name="Add to" sid="217575695065436" type="System">
                             <param id="0" name="Variable">SCORE</param>
                             <param id="1" name="Value">500</param>
@@ -369,7 +369,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="447451065947876" type="inimigo3" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="447451065947876" type="inimigo3" />
                         <action id="-10" name="Add to" sid="594785438659036" type="System">
                             <param id="0" name="Variable">SCORE</param>
                             <param id="1" name="Value">1000</param>
@@ -386,7 +386,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="569880891755252" type="inimigo4" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="569880891755252" type="inimigo4" />
                         <action id="-10" name="Add to" sid="657017559563235" type="System">
                             <param id="0" name="Variable">SCORE</param>
                             <param id="1" name="Value">100000</param>
@@ -407,7 +407,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="491912112106150" type="inimigo1" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="491912112106150" type="inimigo1" />
                         <action id="-9" name="Destroy" sid="137430169661472" type="tiro" />
                         <action id="-10" name="Add to" sid="933820912143802" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -425,7 +425,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="648263525270983" type="inimigo2" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="648263525270983" type="inimigo2" />
                         <action id="-9" name="Destroy" sid="551681394046349" type="tiro" />
                         <action id="-10" name="Add to" sid="652259091054560" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -443,7 +443,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="594283465769708" type="inimigo1" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="594283465769708" type="inimigo1" />
                         <action id="-10" name="Add to" sid="923825227883313" type="System">
                             <param id="0" name="Variable">SCORE</param>
                             <param id="1" name="Value">100</param>
@@ -460,7 +460,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="967740264508266" type="inimigo2" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="967740264508266" type="inimigo2" />
                         <action id="-10" name="Add to" sid="223112794482875" type="System">
                             <param id="0" name="Variable">SCORE</param>
                             <param id="1" name="Value">500</param>
@@ -477,7 +477,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="216062164126169" type="inimigo3" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="216062164126169" type="inimigo3" />
                         <action id="-9" name="Destroy" sid="117818362467646" type="missile" />
                         <action id="-10" name="Add to" sid="332391516402514" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -588,6 +588,21 @@
         </event-group>
         <event-group description="" sid="193051583682843" title="Teclas de Origem">
             <sub-events>
+                <event-block sid="587412039405333">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="815726633404893" type="Keyboard">
+                            <param id="0" name="Key">82 (R)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="564231564437147" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="619717868277618" type="System" />
+                        <action id="-26" name="Restart layout" sid="134602968959349" type="System" />
+                    </actions>
+                </event-block>
                 <event-block sid="609818625591575">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="168597974622663" type="Keyboard">
@@ -626,19 +641,17 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="587412039405333">
+        <event-block sid="645446488102303">
             <conditions>
-                <condition id="0" name="On key pressed" sid="815726633404893" type="Keyboard">
-                    <param id="0" name="Key">82 (R)</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="637643279346972" type="System" />
             </conditions>
             <actions>
-                <action id="-4" name="Set layer visible" sid="564231564437147" type="System">
-                    <param id="0" name="Layer">&quot;Game over&quot;</param>
-                    <param id="1" name="Visibility">0</param>
+                <action id="0" name="Play" sid="519661926759970" type="Audio">
+                    <param id="0" name="Audio file">children-of-the-grave-8-bit (online-audio-converter.com)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="-21" name="Reset global variables" sid="619717868277618" type="System" />
-                <action id="-26" name="Restart layout" sid="134602968959349" type="System" />
             </actions>
         </event-block>
     </events>

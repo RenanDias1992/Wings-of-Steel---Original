@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Fase 1</layout>
-        <event-sheet order="1">Comandos 1</event-sheet>
+        <layout order="0">Fase 1</layout>
+        <event-sheet active="1" order="1">Comandos 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,7 +24,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Nave e Inimigo/" />
         <folder expanded="0" path="object-folder/Fundo/" />
-        <folder expanded="1" path="object-folder/Geradores/" />
+        <folder expanded="0" path="object-folder/Geradores/" />
+        <folder expanded="0" path="object-folder/Tiros/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -36,6 +37,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/inimigo2/" />
         <folder expanded="1" path="animation-folder/inimigo3/" />
         <folder expanded="1" path="animation-folder/inimigo4/" />
+        <folder expanded="1" path="animation-folder/navepatrulha/" />
         <folder expanded="1" path="animation-folder/fundocenario/" />
         <folder expanded="1" path="animation-folder/gerador/" />
         <folder expanded="1" path="animation-folder/gerador2/" />
@@ -45,10 +47,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pltesq/" />
         <folder expanded="1" path="animation-folder/pltdir/" />
         <folder expanded="1" path="animation-folder/sensor/" />
-        <folder expanded="1" path="animation-folder/tiro/" />
         <folder expanded="1" path="animation-folder/missile/" />
         <folder expanded="1" path="animation-folder/neutronbomb/" />
-        <folder expanded="1" path="animation-folder/navepatrulha/" />
+        <folder expanded="1" path="animation-folder/tiro/" />
         <folder expanded="1" path="animation-folder/tiropatrulha/" />
         <folder expanded="1" path="animation-folder/tiroboss/" />
         <folder expanded="1" path="animation-folder/Fundo/" />
