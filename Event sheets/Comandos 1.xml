@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Comandos 1</name>
+    <events>
+        <variable constant="0" name="SCORE" sid="851361562623535" static="0" type="number">0</variable>
+        <variable constant="0" name="Tempo" sid="908607542296508" static="0" type="number">0</variable>
+        <variable constant="0" name="VARcontaTiro" sid="199382339705616" static="0" type="number">0</variable>
+        <event-group description="" sid="383196848059345" title="Configurações Globais">
+            <sub-events>
+                <event-block sid="450867181040317">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="190487783851887" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="552387586148414" type="fundocenario">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="280967924031496" type="neutronbomb">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="777411972958173" type="inimigo1">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="873624520505427" type="inimigo2">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="502339406849365" type="inimigo3">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="856536724413790" type="tiro">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="495308873074702" type="missile">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="465985499701960" type="navepatrulha">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="622804502021689" type="tiropatrulha">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="449692845868614" type="inimigo4">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="223388149574150" type="tiroboss">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="462443335757048" title="Spawn inimigo">
+            <sub-events>
+                <event-block sid="430296968697610">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="484244280776464" type="System">
+                            <param id="0" name="Interval (seconds)">0.3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="712608254946457" type="gerador">
+                            <param id="0" name="Object">inimigo1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="662551299154083">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="241101193473628" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="393169774098266" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="460422347564276">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="410767028914987" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="332756161208747" type="System">
+                            <param id="0" name="Object to create">gerador2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">237</param>
+                            <param id="3" name="Y">-239</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="323200446034347">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="106529735046668" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="126082593684986" type="gerador2">
+                            <param id="0" name="Object">inimigo2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996880808297621">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="423584966005853" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="387714938984346" type="System">
+                            <param id="0" name="Object to create">gerador3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">237</param>
+                            <param id="3" name="Y">-250</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="776788896201372">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="753717994663008" type="System">
+                            <param id="0" name="Interval (seconds)">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="112493743138906" type="gerador3">
+                            <param id="0" name="Object">inimigo3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="253902922969338">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="547043646766522" type="System">
+                            <param id="0" name="Interval (seconds)">choose(5,6,7,8)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="477304502290358" type="gerador">
+                            <param id="0" name="Object">neutronbomb</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="222947963626901" title="Colisões Inimigas com a Nave">
+            <sub-events>
+                <event-block sid="171093961695246">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="273918328845583" type="neutronbomb">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="172301790291555" type="nave" />
+                        <action id="-16" name="Wait" sid="481408506268454" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="691874056161804" type="System" />
+                        <action id="-26" name="Restart layout" sid="339347197593987" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="179489588857574">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="895320787641675" type="inimigo1">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="801871130571501" type="nave" />
+                        <action id="-16" name="Wait" sid="845880653218722" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="957760130410845" type="System" />
+                        <action id="-26" name="Restart layout" sid="581149748892489" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="598906712429151">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="138687322796175" type="inimigo2">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="616796475599378" type="nave" />
+                        <action id="-16" name="Wait" sid="402201372025417" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="104054635257850" type="System" />
+                        <action id="-26" name="Restart layout" sid="219256443724807" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="272384138632932">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="184659851366184" type="inimigo3">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="879756332544646" type="nave" />
+                        <action id="-16" name="Wait" sid="882379426399179" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="454819921408333" type="System" />
+                        <action id="-26" name="Restart layout" sid="498709544773907" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="274065364394329">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="513514782452131" type="inimigo1">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="386912156050532" type="nave" />
+                        <action id="-16" name="Wait" sid="451372929224337" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="935703703103301" type="System" />
+                        <action id="-26" name="Restart layout" sid="922974331057582" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="640802955819875" title="Tiro">
+            <sub-events>
+                <event-block sid="286719186941845">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="395020924036718" type="System">
+                            <param id="0" name="Variable">VARcontaTiro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="225309688815967">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="613926438673862" type="Keyboard">
+                                    <param id="0" name="Key">86 (V)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="936479884486527" type="System">
+                                    <param id="0" name="Variable">VARcontaTiro</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="695000775491552" type="nave">
+                                    <param id="0" name="Object">missile</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="773276916584189">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="849107507881998" type="missile" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="820019758378688" type="System">
+                            <param id="0" name="Variable">VARcontaTiro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="327309663847489">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="137657059637294" type="Keyboard">
+                            <param id="0" name="Key">67 (C)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="697332612777825" type="nave">
+                            <param id="0" name="Object">tiro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="121364367006278" title="Projétil inimigo em Colisão na Nave">
+            <sub-events>
+                <event-block sid="821394632271363">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="227390691058549" type="tiroboss">
+                            <param id="0" name="Object">nave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="403480699248789" type="nave" />
+                        <action id="-16" name="Wait" sid="784669587639849" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="107381451034832" type="System" />
+                        <action id="-26" name="Restart layout" sid="780267841443791" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="201012699813954">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="891792055707686" type="System">
+                            <param id="0" name="Interval (seconds)">choose(10,12,15)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="567801141401536" type="inimigo4">
+                            <param id="0" name="Object">tiroboss</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="354821957569143" title="Colisão do tiro no inimigo">
+            <sub-events>
+                <event-block sid="908863526801375">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="448508549271430" type="tiropatrulha">
+                            <param id="0" name="Object">inimigo1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="405967599872212" type="inimigo1" />
+                        <action id="-10" name="Add to" sid="693618455131077" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="0" name="Set text" sid="533105384741973" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="663832347484707">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="388298538279352" type="tiropatrulha">
+                            <param id="0" name="Object">inimigo2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="770577098346609" type="inimigo2" />
+                        <action id="-10" name="Add to" sid="217575695065436" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="182895459889796" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="630804006499494">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="301423006568833" type="tiropatrulha">
+                            <param id="0" name="Object">inimigo3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="447451065947876" type="inimigo3" />
+                        <action id="-10" name="Add to" sid="594785438659036" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="0" name="Set text" sid="991617299653057" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="185440858827922">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="698235601176463" type="tiropatrulha">
+                            <param id="0" name="Object">inimigo4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="569880891755252" type="inimigo4" />
+                        <action id="-10" name="Add to" sid="657017559563235" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">100000</param>
+                        </action>
+                        <action id="0" name="Set text" sid="750384697499658" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="887872954486918" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="813737493546545" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="237425109350763">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="172000283548074" type="tiro">
+                            <param id="0" name="Object">inimigo1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="491912112106150" type="inimigo1" />
+                        <action id="-9" name="Destroy" sid="137430169661472" type="tiro" />
+                        <action id="-10" name="Add to" sid="933820912143802" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="0" name="Set text" sid="560336150027583" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="142193030915954">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="294831681262917" type="tiro">
+                            <param id="0" name="Object">inimigo2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="648263525270983" type="inimigo2" />
+                        <action id="-9" name="Destroy" sid="551681394046349" type="tiro" />
+                        <action id="-10" name="Add to" sid="652259091054560" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="733988077729142" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="213899483428109">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="567079255611895" type="missile">
+                            <param id="0" name="Object">inimigo1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="594283465769708" type="inimigo1" />
+                        <action id="-10" name="Add to" sid="923825227883313" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="0" name="Set text" sid="824414336030281" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="746957217569770">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="491766705324626" type="missile">
+                            <param id="0" name="Object">inimigo2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="967740264508266" type="inimigo2" />
+                        <action id="-10" name="Add to" sid="223112794482875" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="688279229800265" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="735368013192653">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="806549874774533" type="missile">
+                            <param id="0" name="Object">inimigo3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="216062164126169" type="inimigo3" />
+                        <action id="-9" name="Destroy" sid="117818362467646" type="missile" />
+                        <action id="-10" name="Add to" sid="332391516402514" type="System">
+                            <param id="0" name="Variable">SCORE</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="0" name="Set text" sid="650386984094533" type="SCORE">
+                            <param id="0" name="Text">SCORE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="506130197440671" title="Colisões Inimigas com o Sensor">
+            <sub-events>
+                <event-block sid="409546205108491">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="564560526327051" type="inimigo1">
+                            <param id="0" name="Object">sensor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="262446344440194" type="nave" />
+                        <action id="-16" name="Wait" sid="372278975724608" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="106801231156543" type="System" />
+                        <action id="-26" name="Restart layout" sid="451652844207912" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="500707054928500">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="994579427083747" type="inimigo2">
+                            <param id="0" name="Object">sensor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="419664039331603" type="nave" />
+                        <action id="-16" name="Wait" sid="780349482761502" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="939829505420973" type="System" />
+                        <action id="-26" name="Restart layout" sid="215134257482314" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="483168512373303">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="691384238764003" type="inimigo3">
+                            <param id="0" name="Object">sensor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="926928723732664" type="nave" />
+                        <action id="-16" name="Wait" sid="262334605120175" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="415193850655742" type="System" />
+                        <action id="-26" name="Restart layout" sid="107922416828293" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="470575237672424">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="621180994877697" type="neutronbomb">
+                            <param id="0" name="Object">sensor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="345174247043177" type="neutronbomb" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="584985673038804" title="Spawn Ajuda">
+            <sub-events>
+                <event-block sid="700999517640914">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="812207143337968" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="978641154034214" type="sensor">
+                            <param id="0" name="Object">navepatrulha</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="492128473980668" type="sensor">
+                            <param id="0" name="Object">tiropatrulha</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="193051583682843" title="Teclas de Origem">
+            <sub-events>
+                <event-block sid="609818625591575">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="168597974622663" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="878173803705685" type="System">
+                            <param id="0" name="Layer">&quot;Tela Inicio&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="177650025893006" type="System">
+                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="424317223573572" type="System" />
+                        <action id="-26" name="Restart layout" sid="385758037602554" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="528521507796529">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="979109595581117" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="413609648919403" type="System">
+                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="298910644514600" type="System">
+                            <param id="0" name="Layer">&quot;Tela Inicio&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

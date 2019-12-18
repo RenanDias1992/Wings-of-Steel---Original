@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Fase 1</layout>
+        <event-sheet active="1" order="1">Comandos 1</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Nave e Inimigo/" />
+        <folder expanded="0" path="object-folder/Fundo/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/nave/" />
+        <folder expanded="1" path="animation-folder/fundocenario/" />
+        <folder expanded="1" path="animation-folder/inimigo1/" />
+        <folder expanded="1" path="animation-folder/inimigo2/" />
+        <folder expanded="1" path="animation-folder/inimigo3/" />
+        <folder expanded="1" path="animation-folder/inimigo4/" />
+        <folder expanded="1" path="animation-folder/tiro/" />
+        <folder expanded="1" path="animation-folder/missile/" />
+        <folder expanded="1" path="animation-folder/gerador/" />
+        <folder expanded="1" path="animation-folder/sensor/" />
+        <folder expanded="1" path="animation-folder/plataforma/" />
+        <folder expanded="1" path="animation-folder/neutronbomb/" />
+        <folder expanded="1" path="animation-folder/gerador2/" />
+        <folder expanded="1" path="animation-folder/gerador3/" />
+        <folder expanded="1" path="animation-folder/geradorboss/" />
+        <folder expanded="1" path="animation-folder/navepatrulha/" />
+        <folder expanded="1" path="animation-folder/tiropatrulha/" />
+        <folder expanded="1" path="animation-folder/pltesq/" />
+        <folder expanded="1" path="animation-folder/pltdir/" />
+        <folder expanded="1" path="animation-folder/tiroboss/" />
+        <folder expanded="1" path="animation-folder/Fundo/" />
+    </folders-expanded>
+</c2uistate>
