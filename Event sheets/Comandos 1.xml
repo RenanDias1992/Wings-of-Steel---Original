@@ -224,6 +224,13 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="879756332544646" type="nave" />
+                        <action id="-4" name="Set layer visible" sid="786168670845943" type="System">
+                            <param id="0" name="Layer">&quot;Game over&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="947144974845683" type="System">
+                            <param id="0" name="Seconds">10</param>
+                        </action>
                         <action id="-21" name="Reset global variables" sid="454819921408333" type="System" />
                         <action id="-26" name="Restart layout" sid="498709544773907" type="System" />
                     </actions>
@@ -319,7 +326,7 @@
                 <event-block sid="201012699813954">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="891792055707686" type="System">
-                            <param id="0" name="Interval (seconds)">choose(10,12,15)</param>
+                            <param id="0" name="Interval (seconds)">choose(7,10,15)</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -341,12 +348,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="282142573796847" type="Audio">
-                            <param id="0" name="Audio file">explosion</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="405967599872212" type="inimigo1" />
                         <action id="-10" name="Add to" sid="693618455131077" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -364,12 +365,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="879613765762995" type="Audio">
-                            <param id="0" name="Audio file">explosion</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="770577098346609" type="inimigo2" />
                         <action id="-10" name="Add to" sid="217575695065436" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -387,12 +382,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="149055328055219" type="Audio">
-                            <param id="0" name="Audio file">explosion</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="447451065947876" type="inimigo3" />
                         <action id="-10" name="Add to" sid="594785438659036" type="System">
                             <param id="0" name="Variable">SCORE</param>
@@ -413,7 +402,7 @@
                         <action id="0" name="Play" sid="584415914704225" type="Audio">
                             <param id="0" name="Audio file">destruction boss</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="569880891755252" type="inimigo4" />
@@ -473,10 +462,10 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="675076821996019" type="Audio">
+                        <action id="0" name="Play" sid="587507826324318" type="Audio">
                             <param id="0" name="Audio file">explosion</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-40</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="648263525270983" type="inimigo2" />
@@ -497,10 +486,10 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="772440079012477" type="Audio">
+                        <action id="0" name="Play" sid="207770057669097" type="Audio">
                             <param id="0" name="Audio file">explosion</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-40</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="594283465769708" type="inimigo1" />
@@ -520,10 +509,10 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="472747306738047" type="Audio">
+                        <action id="0" name="Play" sid="914147653359616" type="Audio">
                             <param id="0" name="Audio file">explosion</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-40</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="967740264508266" type="inimigo2" />
@@ -543,10 +532,10 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="816517552047225" type="Audio">
+                        <action id="0" name="Play" sid="170279905126493" type="Audio">
                             <param id="0" name="Audio file">explosion</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
+                            <param id="3" name="Volume">-40</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="216062164126169" type="inimigo3" />
@@ -643,35 +632,34 @@
                             <param id="2" name="Value">180</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="132328788870413" type="Audio">
-                            <param id="0" name="Audio file">navepatrulha</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="978641154034214" type="sensor">
-                            <param id="0" name="Object">navepatrulha</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="495139890092135">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="746344044851704" type="System">
-                            <param id="0" name="Variable">Tempo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">180</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="377519402766934" type="sensor">
-                            <param id="0" name="Object">tiropatrulha</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="353481237055677">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="442075216254923" type="System">
+                                    <param id="0" name="Interval (seconds)">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="132328788870413" type="Audio">
+                                    <param id="0" name="Audio file">navepatrulha</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="978641154034214" type="geradorajuda">
+                                    <param id="0" name="Object">navepatrulha</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="377519402766934" type="geradorajuda">
+                                    <param id="0" name="Object">tiropatrulha</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -734,18 +722,22 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="645446488102303">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="637643279346972" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="288992832520005" type="Audio">
-                    <param id="0" name="Audio file">children-of-the-grave-8-bit</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">10</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="999758054884340" title="Som">
+            <sub-events>
+                <event-block sid="645446488102303">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="637643279346972" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="288992832520005" type="Audio">
+                            <param id="0" name="Audio file">children-of-the-grave-8-bit</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
